@@ -14,4 +14,5 @@ class NpmDetector(RegexBasedDetector):
         # npmrc authToken
         # ref. https://stackoverflow.com/questions/53099434/using-auth-tokens-in-npmrc
         re.compile(r'\/\/.+\/:_authToken=\s*((npm_.+)|([A-Fa-f0-9-]{36})).*'),
+        re.compile(r'npm_[A-Za-z0-9]{36}'),
     ]
